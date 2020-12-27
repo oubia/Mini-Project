@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_nZmAYEepEeujEeMR_UBj5A" name="NewModel">
+  <packagedElement xmi:type="uml:Class" xmi:id="_XrzsUEe-EeujEeMR_UBj5A" name="Directeur" visibility="public">
+    <generalization xmi:id="_Vv0qUEfKEeujEeMR_UBj5A" general="_s888cEfDEeujEeMR_UBj5A"/>
+    <ownedAttribute xmi:id="_DCshAEfDEeujEeMR_UBj5A" name="Log_D : Integer" visibility="public"/>
+    <ownedAttribute xmi:id="_hrDxcEfDEeujEeMR_UBj5A" name="Password : integer"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_2mwPoEfAEeujEeMR_UBj5A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_s888cEfDEeujEeMR_UBj5A" name="Etudiant" visibility="public">
+    <ownedAttribute xmi:id="_yBChYEfDEeujEeMR_UBj5A" name="NomeEtudiant">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6i28AEfEEeujEeMR_UBj5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6i3jEEfEEeujEeMR_UBj5A" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_7EGn4EfEEeujEeMR_UBj5A" name="PrenomEtudiant">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DHG1AEfFEeujEeMR_UBj5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DHHcEEfFEeujEeMR_UBj5A" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_EoyDIEfFEeujEeMR_UBj5A" name="CNE">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p_PRUEfHEeujEeMR_UBj5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p_PRUUfHEeujEeMR_UBj5A" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Pic7YEfFEeujEeMR_UBj5A" name="Note">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_q9zLUEfHEeujEeMR_UBj5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_q9zyYEfHEeujEeMR_UBj5A" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_RyBxUEfFEeujEeMR_UBj5A" name="NomeClasse">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sZg7YEfHEeujEeMR_UBj5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sZg7YUfHEeujEeMR_UBj5A" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_U9lHUEfFEeujEeMR_UBj5A" name="Absance">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oy9g4EfGEeujEeMR_UBj5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oy-H8EfGEeujEeMR_UBj5A" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_YFWJgEfFEeujEeMR_UBj5A" name="Payment">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vXHU8EfHEeujEeMR_UBj5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vXHU8UfHEeujEeMR_UBj5A" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_dTvhAEfFEeujEeMR_UBj5A" name="AjouteEtudiant">
+      <ownedParameter xmi:id="_ic82gEfFEeujEeMR_UBj5A" name="NameEtudiant">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_pWFRgEfFEeujEeMR_UBj5A" name="PrenomEtudiant">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_p1XOgEfFEeujEeMR_UBj5A" name="CNE">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_q0_fgEfFEeujEeMR_UBj5A" name="NomeClass">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_z0ZqgEfFEeujEeMR_UBj5A" name="SupprimerEtudiant">
+      <ownedParameter xmi:id="_E8l6gEfGEeujEeMR_UBj5A" name="CNE">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Jawu8EfGEeujEeMR_UBj5A" name="AjoutPayment">
+      <ownedParameter xmi:id="_MNJXAEfGEeujEeMR_UBj5A" name="CNE">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_PAzxcEfGEeujEeMR_UBj5A" name="Payment"/>
+      <ownedParameter xmi:id="_2xyWwEfHEeujEeMR_UBj5A" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_XOPs8EfGEeujEeMR_UBj5A" name="Ajouter_Absance">
+      <ownedParameter xmi:id="_bSWbkEfGEeujEeMR_UBj5A" name="CNE">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_btkX8EfGEeujEeMR_UBj5A" name="Abssance">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wibG8EfGEeujEeMR_UBj5A" name="AjoutNote">
+      <ownedParameter xmi:id="_z5RuAEfGEeujEeMR_UBj5A" name="CNE">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0XGScEfGEeujEeMR_UBj5A" name="Note">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_6ZYlAEfGEeujEeMR_UBj5A" name="AfficheEtudiant">
+      <ownedParameter xmi:id="_922KYEfGEeujEeMR_UBj5A" name="NomeEtudiant">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="__n21AEfGEeujEeMR_UBj5A" name="PrenomEtudiant">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="__5jpAEfGEeujEeMR_UBj5A" name="CNE">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_AOYpgEfHEeujEeMR_UBj5A" name="NomeClass">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_EgMc8EfHEeujEeMR_UBj5A" name="Absance">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_G1uw8EfHEeujEeMR_UBj5A" name="AfficheNote">
+      <ownedParameter xmi:id="_I1_YgEfHEeujEeMR_UBj5A" name="CNE">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_KdEEAEfHEeujEeMR_UBj5A" name="NomeClasse">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_KvOLAEfHEeujEeMR_UBj5A" name="Note">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lOXG0EfIEeujEeMR_UBj5A" name="Professeur" visibility="public">
+    <ownedAttribute xmi:id="_yN4RQEfIEeujEeMR_UBj5A" name="CNI">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2MVD0EfIEeujEeMR_UBj5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2MVD0UfIEeujEeMR_UBj5A" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_yZFbsEfIEeujEeMR_UBj5A" name="NomeProf">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4fup0EfIEeujEeMR_UBj5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4fup0UfIEeujEeMR_UBj5A" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ybWFgEfIEeujEeMR_UBj5A" name="PrenomProf">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8FczUEfIEeujEeMR_UBj5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8FczUUfIEeujEeMR_UBj5A" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ycO2UEfIEeujEeMR_UBj5A" name="Slaire">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-nui0EfIEeujEeMR_UBj5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-nui0UfIEeujEeMR_UBj5A" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zMl8QEfIEeujEeMR_UBj5A" name="LogProf">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Aw5OwEfJEeujEeMR_UBj5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Aw5OwUfJEeujEeMR_UBj5A" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_BEijgEfJEeujEeMR_UBj5A" name="PassWordProf">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ELBMQEfJEeujEeMR_UBj5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ELBMQUfJEeujEeMR_UBj5A" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_GNCHUEfJEeujEeMR_UBj5A" name="AjouterProf">
+      <ownedParameter xmi:id="_W33F4EfJEeujEeMR_UBj5A" name="NomeProf">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_W33F4UfJEeujEeMR_UBj5A" name="PrenomProf">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_W33F4kfJEeujEeMR_UBj5A" name="CNI">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_GnDw4EfJEeujEeMR_UBj5A" name="SupprimerProf">
+      <ownedParameter xmi:id="_cVrZcEfJEeujEeMR_UBj5A" name="CNI">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_G9tWUEfJEeujEeMR_UBj5A" name="AfficheProf"/>
+    <ownedOperation xmi:id="_HKsCYEfJEeujEeMR_UBj5A" name="Gere_Log_Password"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_qqdtsEfJEeujEeMR_UBj5A" name="Classe" visibility="public">
+    <ownedAttribute xmi:id="_uQ8sMEfJEeujEeMR_UBj5A" name="NomeClasse">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wJbQwEfJEeujEeMR_UBj5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wJb30EfJEeujEeMR_UBj5A" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_yttLYEfJEeujEeMR_UBj5A" name="AjouterClasse">
+      <ownedParameter xmi:id="_6kFRwEfJEeujEeMR_UBj5A" name="NomeClasse"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_zPuTUEfJEeujEeMR_UBj5A" name="SupprimerClasse">
+      <ownedParameter xmi:id="_C_U_wEfKEeujEeMR_UBj5A" name="NomeClass">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_zrMHUEfJEeujEeMR_UBj5A" name="AfficheClasse"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_quljQEfKEeujEeMR_UBj5A" name="Gerer" memberEnd="_quljQUfKEeujEeMR_UBj5A _quljREfKEeujEeMR_UBj5A" navigableOwnedEnd="_quljREfKEeujEeMR_UBj5A">
+    <ownedEnd xmi:id="_quljQUfKEeujEeMR_UBj5A" name="directeurs" type="_XrzsUEe-EeujEeMR_UBj5A" association="_quljQEfKEeujEeMR_UBj5A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_quljQkfKEeujEeMR_UBj5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_quljQ0fKEeujEeMR_UBj5A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_quljREfKEeujEeMR_UBj5A" name="etudiants" type="_s888cEfDEeujEeMR_UBj5A" association="_quljQEfKEeujEeMR_UBj5A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_quljRUfKEeujEeMR_UBj5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_quljRkfKEeujEeMR_UBj5A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_C2hzoEfLEeujEeMR_UBj5A" name="Gerer" memberEnd="_C2hzoUfLEeujEeMR_UBj5A _C2hzpEfLEeujEeMR_UBj5A" navigableOwnedEnd="_C2hzoUfLEeujEeMR_UBj5A">
+    <ownedEnd xmi:id="_C2hzoUfLEeujEeMR_UBj5A" name="directeurs" type="_XrzsUEe-EeujEeMR_UBj5A" association="_C2hzoEfLEeujEeMR_UBj5A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C2hzokfLEeujEeMR_UBj5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C2hzo0fLEeujEeMR_UBj5A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_C2hzpEfLEeujEeMR_UBj5A" name="professeurs" type="_lOXG0EfIEeujEeMR_UBj5A" association="_C2hzoEfLEeujEeMR_UBj5A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C2hzpUfLEeujEeMR_UBj5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C2hzpkfLEeujEeMR_UBj5A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_M-ErYEfLEeujEeMR_UBj5A" name="Gerer" memberEnd="_M-ErYUfLEeujEeMR_UBj5A _M-ErZEfLEeujEeMR_UBj5A" navigableOwnedEnd="_M-ErYUfLEeujEeMR_UBj5A">
+    <ownedEnd xmi:id="_M-ErYUfLEeujEeMR_UBj5A" name="directeurs" type="_XrzsUEe-EeujEeMR_UBj5A" association="_M-ErYEfLEeujEeMR_UBj5A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M-ErYkfLEeujEeMR_UBj5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M-ErY0fLEeujEeMR_UBj5A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_M-ErZEfLEeujEeMR_UBj5A" name="classes" type="_qqdtsEfJEeujEeMR_UBj5A" association="_M-ErYEfLEeujEeMR_UBj5A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M-ErZUfLEeujEeMR_UBj5A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M-ErZkfLEeujEeMR_UBj5A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_buhA4EfLEeujEeMR_UBj5A" name="Gerer" memberEnd="_buhn8EfLEeujEeMR_UBj5A _buhn80fLEeujEeMR_UBj5A" navigableOwnedEnd="_buhn80fLEeujEeMR_UBj5A">
+    <ownedEnd xmi:id="_buhn8EfLEeujEeMR_UBj5A" name="etudiants" type="_s888cEfDEeujEeMR_UBj5A" association="_buhA4EfLEeujEeMR_UBj5A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_buhn8UfLEeujEeMR_UBj5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_buhn8kfLEeujEeMR_UBj5A" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_buhn80fLEeujEeMR_UBj5A" name="professeurs" type="_lOXG0EfIEeujEeMR_UBj5A" association="_buhA4EfLEeujEeMR_UBj5A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_buhn9EfLEeujEeMR_UBj5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_buhn9UfLEeujEeMR_UBj5A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>
