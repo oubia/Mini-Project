@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_E5iF0UfOEeupGMqupA36Pg" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_E5iF0kfOEeupGMqupA36Pg" bindingContexts="_E5iF2EfOEeupGMqupA36Pg">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.sirius.ui.editor.session&quot; name=&quot;representations.aird&quot; tooltip=&quot;E:\homy\S3\Mini Project\Mini-Project\UML\Uml modeling\representations.aird&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/E:/homy/S3/Mini%20Project/Mini-Project/UML/Uml%20modeling/representations.aird&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;.project&quot; tooltip=&quot;E:\homy\S3\Mini Project\Mini-Project\UML\Uml modeling\.project&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/E:/homy/S3/Mini%20Project/Mini-Project/UML/Uml%20modeling/.project&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.uml2.uml.editor.presentation.UMLEditorID&quot; name=&quot;model.uml&quot; tooltip=&quot;E:\homy\S3\Mini Project\Mini-Project\UML\Uml modeling\model.uml&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/E:/homy/S3/Mini%20Project/Mini-Project/UML/Uml%20modeling/model.uml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.sirius.ui.editor.session&quot; name=&quot;representations.aird&quot; tooltip=&quot;tes/representations.aird&quot;>&#xD;&#xA;&lt;persistable path=&quot;/tes/representations.aird&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInputFactory&quot; id=&quot;org.eclipse.sirius.diagram.ui.part.SiriusDiagramEditorID&quot; name=&quot;NewModel Use Case Diagram&quot; tooltip=&quot;platform:/resource/D_C_U/representations.aird/NewModel Use Case Diagram&quot;>&#xD;&#xA;&lt;persistable REP_DESC_URI=&quot;platform:/resource/D_C_U/representations.aird#_nbNkAEg4EeupToC51orD4A&quot; SESSION_RESOURCE_URI=&quot;platform:/resource/D_C_U/representations.aird&quot; bundle=&quot;org.eclipse.sirius.ui&quot; class=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInput&quot; name=&quot;NewModel Use Case Diagram&quot; uri=&quot;platform:/resource/D_C_U/representations.aird#_ncEfoUg4EeupToC51orD4A&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.sirius.ui.editor.session&quot; name=&quot;representations.aird&quot; tooltip=&quot;D_C_U/representations.aird&quot;>&#xD;&#xA;&lt;persistable path=&quot;/D_C_U/representations.aird&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.uml2.uml.editor.presentation.UMLEditorID&quot; name=&quot;model.uml&quot; tooltip=&quot;D_C_U/model.uml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/D_C_U/model.uml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;.project&quot; tooltip=&quot;D_C_U/.project&quot;>&#xD;&#xA;&lt;persistable path=&quot;/D_C_U/.project&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.sirius.ui.editor.session&quot; name=&quot;representations.aird&quot; tooltip=&quot;E:\homy\S3\Mini Project\Mini-Project\UML\Uml modeling\representations.aird&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/E:/homy/S3/Mini%20Project/Mini-Project/UML/Uml%20modeling/representations.aird&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;.project&quot; tooltip=&quot;E:\homy\S3\Mini Project\Mini-Project\UML\Uml modeling\.project&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/E:/homy/S3/Mini%20Project/Mini-Project/UML/Uml%20modeling/.project&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.uml2.uml.editor.presentation.UMLEditorID&quot; name=&quot;model.uml&quot; tooltip=&quot;E:\homy\S3\Mini Project\Mini-Project\UML\Uml modeling\model.uml&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/E:/homy/S3/Mini%20Project/Mini-Project/UML/Uml%20modeling/model.uml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.sirius.ui.editor.session&quot; name=&quot;representations.aird&quot; tooltip=&quot;tes/representations.aird&quot;>&#xD;&#xA;&lt;persistable path=&quot;/tes/representations.aird&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_E5iF0kfOEeupGMqupA36Pg" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_F1fXwUfOEeupGMqupA36Pg" x="-9" y="0" width="1024" height="768">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_E5iF0kfOEeupGMqupA36Pg" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_F1fXwUfOEeupGMqupA36Pg" x="676" y="0" width="697" height="775">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -12,8 +12,8 @@
     <persistedState key="show_in_time" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;show_in_time/>"/>
     <tags>topLevel</tags>
     <tags>shellMaximized</tags>
-    <children xsi:type="basic:PartSashContainer" xmi:id="_F1fXwUfOEeupGMqupA36Pg" selectedElement="_F1f-0UfOEeupGMqupA36Pg" horizontal="true">
-      <children xsi:type="advanced:PerspectiveStack" xmi:id="_F1f-0EfOEeupGMqupA36Pg" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_G3uQ0EfOEeupGMqupA36Pg">
+    <children xsi:type="basic:PartSashContainer" xmi:id="_F1fXwUfOEeupGMqupA36Pg" selectedElement="_F1f-0EfOEeupGMqupA36Pg" horizontal="true">
+      <children xsi:type="advanced:PerspectiveStack" xmi:id="_F1f-0EfOEeupGMqupA36Pg" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7925" selectedElement="_G3uQ0EfOEeupGMqupA36Pg">
         <children xsi:type="advanced:Perspective" xmi:id="_G3uQ0EfOEeupGMqupA36Pg" elementId="org.eclipse.sirius.ui.tools.perspective.modeling" selectedElement="_G3uQ0UfOEeupGMqupA36Pg" label="Modeling" iconURI="platform:/plugin/org.eclipse.sirius.ui.ext/icons/full/others/ModelingPerspective.gif">
           <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:print,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:org.eclipse.jdt.ui.actions.OpenProjectWizard,"/>
           <tags>persp.actionSet:org.eclipse.ui.cheatsheets.actionSet</tags>
@@ -35,17 +35,17 @@
           <tags>persp.newWizSC:org.obeonetwork.dsl.uml2.wizard.newUmlModel</tags>
           <tags>persp.newWizSC:org.obeonetwork.dsl.uml2.wizard.newUmlProject</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_G3uQ0UfOEeupGMqupA36Pg" selectedElement="_G3uQ10fOEeupGMqupA36Pg" horizontal="true">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_G3uQ0kfOEeupGMqupA36Pg" containerData="2500" selectedElement="_G3uQ1UfOEeupGMqupA36Pg">
-              <children xsi:type="basic:PartStack" xmi:id="_G3uQ00fOEeupGMqupA36Pg" elementId="org.eclipse.sirius.ui.tools.views.model.explorerMStack" toBeRendered="false" containerData="5000">
-                <children xsi:type="advanced:Placeholder" xmi:id="_G3uQ1EfOEeupGMqupA36Pg" elementId="org.eclipse.sirius.ui.tools.views.model.explorer" toBeRendered="false" ref="_G3hcgEfOEeupGMqupA36Pg"/>
+            <children xsi:type="basic:PartSashContainer" xmi:id="_G3uQ0kfOEeupGMqupA36Pg" containerData="1239" selectedElement="_G3uQ00fOEeupGMqupA36Pg">
+              <children xsi:type="basic:PartStack" xmi:id="_G3uQ00fOEeupGMqupA36Pg" elementId="org.eclipse.sirius.ui.tools.views.model.explorerMStack" containerData="5000" selectedElement="_G3uQ1EfOEeupGMqupA36Pg">
+                <children xsi:type="advanced:Placeholder" xmi:id="_G3uQ1EfOEeupGMqupA36Pg" elementId="org.eclipse.sirius.ui.tools.views.model.explorer" ref="_G3hcgEfOEeupGMqupA36Pg"/>
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_G3uQ1UfOEeupGMqupA36Pg" elementId="org.eclipse.ui.views.ContentOutlineMStack" containerData="5000" selectedElement="_G3uQ1kfOEeupGMqupA36Pg">
                 <children xsi:type="advanced:Placeholder" xmi:id="_G3uQ1kfOEeupGMqupA36Pg" elementId="org.eclipse.ui.views.ContentOutline" ref="_G3oxQEfOEeupGMqupA36Pg"/>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_G3uQ10fOEeupGMqupA36Pg" containerData="7500" selectedElement="_G3uQ2EfOEeupGMqupA36Pg">
-              <children xsi:type="advanced:Placeholder" xmi:id="_G3uQ2EfOEeupGMqupA36Pg" elementId="org.eclipse.ui.editorss" containerData="6500" ref="_G3SL8EfOEeupGMqupA36Pg"/>
-              <children xsi:type="basic:PartStack" xmi:id="_G3uQ2UfOEeupGMqupA36Pg" elementId="bottom" containerData="3500" selectedElement="_RSauEUfOEeupGMqupA36Pg">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_G3uQ10fOEeupGMqupA36Pg" containerData="8761" selectedElement="_G3uQ2EfOEeupGMqupA36Pg">
+              <children xsi:type="advanced:Placeholder" xmi:id="_G3uQ2EfOEeupGMqupA36Pg" elementId="org.eclipse.ui.editorss" containerData="9000" ref="_G3SL8EfOEeupGMqupA36Pg"/>
+              <children xsi:type="basic:PartStack" xmi:id="_G3uQ2UfOEeupGMqupA36Pg" elementId="bottom" containerData="1000" selectedElement="_RSauEUfOEeupGMqupA36Pg">
                 <tags>General</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_G3uQ2kfOEeupGMqupA36Pg" elementId="org.eclipse.ui.views.PropertySheet" ref="_G3qmcEfOEeupGMqupA36Pg"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_G3uQ20fOEeupGMqupA36Pg" elementId="org.eclipse.ui.views.ProblemView" ref="_G3qmcUfOEeupGMqupA36Pg"/>
@@ -56,10 +56,9 @@
           </children>
         </children>
       </children>
-      <children xsi:type="basic:PartStack" xmi:id="_F1f-0UfOEeupGMqupA36Pg" elementId="stickyFolderRight" containerData="2500" selectedElement="_F1f-00fOEeupGMqupA36Pg">
-        <tags>active</tags>
+      <children xsi:type="basic:PartStack" xmi:id="_F1f-0UfOEeupGMqupA36Pg" elementId="stickyFolderRight" toBeRendered="false" containerData="2075">
         <children xsi:type="advanced:Placeholder" xmi:id="_F1f-0kfOEeupGMqupA36Pg" elementId="org.eclipse.help.ui.HelpView" toBeRendered="false" ref="_F1dikEfOEeupGMqupA36Pg"/>
-        <children xsi:type="advanced:Placeholder" xmi:id="_F1f-00fOEeupGMqupA36Pg" elementId="org.eclipse.ui.internal.introview" ref="_F1ewsEfOEeupGMqupA36Pg"/>
+        <children xsi:type="advanced:Placeholder" xmi:id="_F1f-00fOEeupGMqupA36Pg" elementId="org.eclipse.ui.internal.introview" toBeRendered="false" ref="_F1ewsEfOEeupGMqupA36Pg"/>
         <children xsi:type="advanced:Placeholder" xmi:id="_F1f-1EfOEeupGMqupA36Pg" elementId="org.eclipse.ui.cheatsheets.views.CheatSheetView" toBeRendered="false" ref="_F1fXwEfOEeupGMqupA36Pg"/>
       </children>
     </children>
@@ -75,13 +74,12 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view>&#xD;&#xA;&lt;presentation currentPage=&quot;file:///C:/Users/moham/Downloads/Compressed/UMLDesigner/configuration/org.eclipse.osgi/405/0/.cp/intro/gettingstarted.html&quot;/>&#xD;&#xA;&lt;standbyPart contentPartID=&quot;org.eclipse.platform.cheatsheet&quot; restore=&quot;true&quot;>&#xD;&#xA;&lt;standbyContentPart cheatsheetId=&quot;org.obeonetwork.dsl.uml2.design.doc.cheatsheets.createProject&quot;/>&#xD;&#xA;&lt;/standbyPart>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>active</tags>
       <tags>activeOnClose</tags>
       <menus xmi:id="_HQG7oEfOEeupGMqupA36Pg" elementId="org.eclipse.ui.internal.introview">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_HQG7oUfOEeupGMqupA36Pg" elementId="org.eclipse.ui.internal.introview"/>
+      <toolbar xmi:id="_HQG7oUfOEeupGMqupA36Pg" elementId="org.eclipse.ui.internal.introview" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_F1fXwEfOEeupGMqupA36Pg" elementId="org.eclipse.ui.cheatsheets.views.CheatSheetView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Cheat Sheets" iconURI="platform:/plugin/org.eclipse.ui.cheatsheets/icons/view16/cheatsheet_view.gif" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.internal.cheatsheets.views.CheatSheetView"/>
@@ -90,14 +88,35 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_G3SL8EfOEeupGMqupA36Pg" elementId="org.eclipse.ui.editorss" selectedElement="_G3SzAEfOEeupGMqupA36Pg">
-      <children xsi:type="basic:PartStack" xmi:id="_G3SzAEfOEeupGMqupA36Pg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_Md-HoEfOEeupGMqupA36Pg">
+      <children xsi:type="basic:PartStack" xmi:id="_G3SzAEfOEeupGMqupA36Pg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_nuGq0Eg4EeupToC51orD4A">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <children xsi:type="basic:Part" xmi:id="_Md-HoEfOEeupGMqupA36Pg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="model.uml" iconURI="platform:/plugin/org.eclipse.uml2.uml.editor/icons/full/obj16/UMLModelFile.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.uml2.uml.editor.presentation.UMLEditorID&quot; name=&quot;model.uml&quot; partName=&quot;model.uml&quot; title=&quot;model.uml&quot; tooltip=&quot;E:\homy\S3\Mini Project\Mini-Project\UML\Uml modeling\model.uml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; uri=&quot;file:/E:/homy/S3/Mini%20Project/Mini-Project/UML/Uml%20modeling/model.uml&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <tags>active</tags>
+        <children xsi:type="basic:Part" xmi:id="_aaOZ8Eg4EeupToC51orD4A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label=".project" iconURI="platform:/plugin/org.eclipse.ui.editors/icons/full/obj16/file_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;.project&quot; partName=&quot;.project&quot; title=&quot;.project&quot; tooltip=&quot;D_C_U/.project&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/D_C_U/.project&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.ui.DefaultTextEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_bjwN0Eg4EeupToC51orD4A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="model.uml" iconURI="platform:/plugin/org.eclipse.uml2.uml.editor/icons/full/obj16/UMLModelFile.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.uml2.uml.editor.presentation.UMLEditorID&quot; name=&quot;model.uml&quot; partName=&quot;model.uml&quot; title=&quot;model.uml&quot; tooltip=&quot;D_C_U/model.uml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/D_C_U/model.uml&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.uml2.uml.editor.presentation.UMLEditorID</tags>
           <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_ePgpcEg4EeupToC51orD4A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="D_C_U" iconURI="platform:/plugin/org.eclipse.sirius.ui.editor/icons/SiriusFile.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.sirius.ui.editor.session&quot; name=&quot;representations.aird&quot; partName=&quot;D_C_U&quot; title=&quot;D_C_U&quot; tooltip=&quot;D_C_U/representations.aird&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/D_C_U/representations.aird&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.sirius.ui.editor.session</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_nuGq0Eg4EeupToC51orD4A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="NewModel Use Case Diagram" iconURI="platform:/plugin/org.eclipse.sirius.diagram.ui/icons/DDiagram.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.sirius.diagram.ui.part.SiriusDiagramEditorID&quot; name=&quot;NewModel Use Case Diagram&quot; partName=&quot;NewModel Use Case Diagram&quot; title=&quot;NewModel Use Case Diagram&quot; tooltip=&quot;platform:/resource/D_C_U/representations.aird/NewModel Use Case Diagram&quot;>&#xD;&#xA;&lt;input REP_DESC_URI=&quot;platform:/resource/D_C_U/representations.aird#_nbNkAEg4EeupToC51orD4A&quot; SESSION_RESOURCE_URI=&quot;platform:/resource/D_C_U/representations.aird&quot; bundle=&quot;org.eclipse.sirius.ui&quot; class=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInput&quot; factoryID=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInputFactory&quot; name=&quot;NewModel Use Case Diagram&quot; uri=&quot;platform:/resource/D_C_U/representations.aird#_ncEfoUg4EeupToC51orD4A&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.sirius.diagram.ui.part.SiriusDiagramEditorID</tags>
+          <tags>removeOnHide</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
         </children>
       </children>
     </sharedElements>
@@ -111,7 +130,7 @@
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_G7yRcUfOEeupGMqupA36Pg" elementId="org.eclipse.sirius.ui.tools.views.model.explorer" visible="false"/>
+      <toolbar xmi:id="_G7yRcUfOEeupGMqupA36Pg" elementId="org.eclipse.sirius.ui.tools.views.model.explorer"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_G3oxQEfOEeupGMqupA36Pg" elementId="org.eclipse.ui.views.ContentOutline" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Outline" iconURI="platform:/plugin/org.eclipse.ui.views/icons/full/eview16/outline_co.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.views.contentoutline.ContentOutline"/>
@@ -180,7 +199,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GCxl0EfOEeupGMqupA36Pg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_GDZ38EfOEeupGMqupA36Pg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_E670HUfOEeupGMqupA36Pg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_KJNCgEg4EeupToC51orD4A" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_E670HUfOEeupGMqupA36Pg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GCxl0UfOEeupGMqupA36Pg" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -201,7 +220,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GCyz8EfOEeupGMqupA36Pg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_GDc7QEfOEeupGMqupA36Pg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_E6w0_kfOEeupGMqupA36Pg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_KJR7AEg4EeupToC51orD4A" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_E6w0_kfOEeupGMqupA36Pg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GCyz8UfOEeupGMqupA36Pg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1701,7 +1720,7 @@
   <addons xmi:id="_E5iF5EfOEeupGMqupA36Pg" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_E5iF5UfOEeupGMqupA36Pg" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_E5sd4EfOEeupGMqupA36Pg" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_JRmsIUg4EeupToC51orD4A" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_E6l1wEfOEeupGMqupA36Pg" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_E6l1wUfOEeupGMqupA36Pg" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>

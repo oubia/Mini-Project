@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>gestion d&apos;ecole</name>
+	<name>D_C_U</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -8,5 +8,6 @@
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.sirius.nature.modelingproject</nature>
+		<nature>org.obeonetwork.dsl.uml2.core.umlProjectNature</nature>
 	</natures>
 </projectDescription>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_U3gYQEg4EeupToC51orD4A" name="NewModel">
+  <ownedRule xmi:type="uml:DurationConstraint" xmi:id="_g1GLoEg4EeupToC51orD4A" name="DurationConstraint1"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_3vttQEg4EeupToC51orD4A" name="GestionDecole" useCase="_9oXisEg4EeupToC51orD4A _gJdYMEg5EeupToC51orD4A _mu-6sEg5EeupToC51orD4A _u6hYwEg5EeupToC51orD4A _2N5fwEg5EeupToC51orD4A _7nNGwEg5EeupToC51orD4A _Q-J2MEg6EeupToC51orD4A _V9I4sEg6EeupToC51orD4A _ZbTosEg6EeupToC51orD4A _cEJTMEg6EeupToC51orD4A _jWnbQEg6EeupToC51orD4A _m-PpQEg6EeupToC51orD4A _6pPNMEg6EeupToC51orD4A _LX9NQEg7EeupToC51orD4A _PcWPwEg7EeupToC51orD4A _TO8-sEg7EeupToC51orD4A _fyGWMEg7EeupToC51orD4A _nolKQEg7EeupToC51orD4A _ucS5wEg7EeupToC51orD4A _zBaqwEg7EeupToC51orD4A _31y_wEg7EeupToC51orD4A">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_9oXisEg4EeupToC51orD4A" name="Gerer un etudiant" subject="_3vttQEg4EeupToC51orD4A"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_gJdYMEg5EeupToC51orD4A" name="Ajouter un etudiant" subject="_3vttQEg4EeupToC51orD4A">
+      <generalization xmi:id="_iXYoUEg5EeupToC51orD4A" general="_9oXisEg4EeupToC51orD4A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_mu-6sEg5EeupToC51orD4A" name="Supprimer un etudiant" subject="_3vttQEg4EeupToC51orD4A">
+      <generalization xmi:id="_tMcGUEg5EeupToC51orD4A" general="_9oXisEg4EeupToC51orD4A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_u6hYwEg5EeupToC51orD4A" name="Ajouter Payment" subject="_3vttQEg4EeupToC51orD4A">
+      <generalization xmi:id="_y64P0Eg5EeupToC51orD4A" general="_9oXisEg4EeupToC51orD4A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_2N5fwEg5EeupToC51orD4A" name="S'athentifier" subject="_3vttQEg4EeupToC51orD4A">
+      <include xmi:id="_6ikZ8Eg5EeupToC51orD4A" addition="_9oXisEg4EeupToC51orD4A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_7nNGwEg5EeupToC51orD4A" name="Avoir un CNE" subject="_3vttQEg4EeupToC51orD4A">
+      <include xmi:id="_-Mxa0Eg5EeupToC51orD4A" addition="_gJdYMEg5EeupToC51orD4A"/>
+      <include xmi:id="_-3MQ0Eg5EeupToC51orD4A" addition="_mu-6sEg5EeupToC51orD4A"/>
+      <include xmi:id="__blXUEg5EeupToC51orD4A" addition="_u6hYwEg5EeupToC51orD4A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Q-J2MEg6EeupToC51orD4A" name="Gerer un prof" subject="_3vttQEg4EeupToC51orD4A"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_V9I4sEg6EeupToC51orD4A" name="Ajouter Prof" subject="_3vttQEg4EeupToC51orD4A">
+      <generalization xmi:id="_vF9XQEg6EeupToC51orD4A" general="_Q-J2MEg6EeupToC51orD4A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ZbTosEg6EeupToC51orD4A" name="Supprimer Prof" subject="_3vttQEg4EeupToC51orD4A">
+      <generalization xmi:id="_vkQc0Eg6EeupToC51orD4A" general="_Q-J2MEg6EeupToC51orD4A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_cEJTMEg6EeupToC51orD4A" name="Ajouter le salaire" subject="_3vttQEg4EeupToC51orD4A">
+      <generalization xmi:id="_wDA1YEg6EeupToC51orD4A" general="_Q-J2MEg6EeupToC51orD4A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_jWnbQEg6EeupToC51orD4A" name="Affiche les Prof" subject="_3vttQEg4EeupToC51orD4A">
+      <generalization xmi:id="_wnQK4Eg6EeupToC51orD4A" general="_Q-J2MEg6EeupToC51orD4A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_m-PpQEg6EeupToC51orD4A" name="S'authentifier" subject="_3vttQEg4EeupToC51orD4A">
+      <include xmi:id="_uEWwUEg6EeupToC51orD4A" addition="_Q-J2MEg6EeupToC51orD4A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_6pPNMEg6EeupToC51orD4A" name="Gerer le classe" subject="_3vttQEg4EeupToC51orD4A"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_LX9NQEg7EeupToC51orD4A" name="Ajouter la classe" subject="_3vttQEg4EeupToC51orD4A">
+      <generalization xmi:id="_awO-0Eg7EeupToC51orD4A" general="_6pPNMEg6EeupToC51orD4A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_PcWPwEg7EeupToC51orD4A" name="Supprimer la classe" subject="_3vttQEg4EeupToC51orD4A">
+      <generalization xmi:id="_bcj5UEg7EeupToC51orD4A" general="_6pPNMEg6EeupToC51orD4A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_TO8-sEg7EeupToC51orD4A" name="Avoir nome de classe" subject="_3vttQEg4EeupToC51orD4A">
+      <include xmi:id="_YuwPQEg7EeupToC51orD4A" addition="_LX9NQEg7EeupToC51orD4A"/>
+      <include xmi:id="_ZYuZUEg7EeupToC51orD4A" addition="_PcWPwEg7EeupToC51orD4A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_fyGWMEg7EeupToC51orD4A" name="S'autentifier" subject="_3vttQEg4EeupToC51orD4A">
+      <include xmi:id="_kQ6D0Eg7EeupToC51orD4A" addition="_6pPNMEg6EeupToC51orD4A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_nolKQEg7EeupToC51orD4A" name="Gerer l'etudiant" subject="_3vttQEg4EeupToC51orD4A"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ucS5wEg7EeupToC51orD4A" name="Ajouter la note" subject="_3vttQEg4EeupToC51orD4A">
+      <generalization xmi:id="_1XWAUEg7EeupToC51orD4A" general="_nolKQEg7EeupToC51orD4A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zBaqwEg7EeupToC51orD4A" name="Ajouter l'absance" subject="_3vttQEg4EeupToC51orD4A">
+      <generalization xmi:id="_1wECUEg7EeupToC51orD4A" general="_nolKQEg7EeupToC51orD4A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_31y_wEg7EeupToC51orD4A" name="S'authentifier" subject="_3vttQEg4EeupToC51orD4A">
+      <include xmi:id="_6YCTAEg7EeupToC51orD4A" addition="_nolKQEg7EeupToC51orD4A"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_CC4wwEg6EeupToC51orD4A" name="Dericteur">
+    <eAnnotations xmi:id="_CC5X0Eg6EeupToC51orD4A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_CC5X0Ug6EeupToC51orD4A" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Om9VUEg6EeupToC51orD4A" memberEnd="_Om98YEg6EeupToC51orD4A _Om-jcEg6EeupToC51orD4A">
+    <ownedEnd xmi:id="_Om98YEg6EeupToC51orD4A" type="_CC4wwEg6EeupToC51orD4A" association="_Om9VUEg6EeupToC51orD4A"/>
+    <ownedEnd xmi:id="_Om-jcEg6EeupToC51orD4A" type="_9oXisEg4EeupToC51orD4A" association="_Om9VUEg6EeupToC51orD4A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zw_jAEg6EeupToC51orD4A" memberEnd="_zw_jAUg6EeupToC51orD4A _zxAKEEg6EeupToC51orD4A">
+    <ownedEnd xmi:id="_zw_jAUg6EeupToC51orD4A" type="_Q-J2MEg6EeupToC51orD4A" association="_zw_jAEg6EeupToC51orD4A"/>
+    <ownedEnd xmi:id="_zxAKEEg6EeupToC51orD4A" type="_CC4wwEg6EeupToC51orD4A" association="_zw_jAEg6EeupToC51orD4A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="__Dn4YEg7EeupToC51orD4A" memberEnd="__DofcEg7EeupToC51orD4A __DofcUg7EeupToC51orD4A">
+    <ownedEnd xmi:id="__DofcEg7EeupToC51orD4A" type="_6pPNMEg6EeupToC51orD4A" association="__Dn4YEg7EeupToC51orD4A"/>
+    <ownedEnd xmi:id="__DofcUg7EeupToC51orD4A" type="_CC4wwEg6EeupToC51orD4A" association="__Dn4YEg7EeupToC51orD4A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_AFI_wEg8EeupToC51orD4A" name="Profeseur">
+    <eAnnotations xmi:id="_AFI_wUg8EeupToC51orD4A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_AFI_wkg8EeupToC51orD4A" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_EwJWUEg8EeupToC51orD4A" memberEnd="_EwJWUUg8EeupToC51orD4A _EwJWUkg8EeupToC51orD4A">
+    <ownedEnd xmi:id="_EwJWUUg8EeupToC51orD4A" type="_nolKQEg7EeupToC51orD4A" association="_EwJWUEg8EeupToC51orD4A"/>
+    <ownedEnd xmi:id="_EwJWUkg8EeupToC51orD4A" type="_AFI_wEg8EeupToC51orD4A" association="_EwJWUEg8EeupToC51orD4A"/>
+  </packagedElement>
+</uml:Model>
