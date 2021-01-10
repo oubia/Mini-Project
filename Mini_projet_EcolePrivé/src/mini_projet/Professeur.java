@@ -24,12 +24,12 @@ public class Professeur {
 
 
 
-    public void ajoute_p(int CNI,String nom_p,String prenom_p,int salaire){
+    public void ajoute_p(int CNI,String nom_p,String prenom_p){
         try{
             float x= (float) (Math.random()*10000);
             float y= (float) (Math.random()*10000);
             int log_p=(int)x; int passwrd_p=(int)y;
-            String query1="INSERT INTO Professeur ( CNI,nom_p,prenom_p,salaire,log_p,passwrd_p) VALUES ("+CNI+",'"+nom_p+"','"+prenom_p+"',"+salaire+","+log_p+","+passwrd_p+")";
+            String query1="INSERT INTO Professeur ( CNI,nom_p,prenom_p,salaire,log_p,passwrd_p) VALUES ("+CNI+",'"+nom_p+"','"+prenom_p+"',"+log_p+","+passwrd_p+")";
             stm.executeUpdate(query1);
         }
         catch (Exception e){
@@ -65,7 +65,7 @@ public class Professeur {
 
     public void ajoute_salaire(int CNI,int s){
         try{
-            String query="UPDATE Professeur SET salaire=salaire+"+s+" WHERE CNI="+CNI+"";
+            String query="UPDATE Professeur SET salaire="+s+" WHERE CNI="+CNI+"";
             stm.executeUpdate(query);
         }catch (Exception e){
             System.out.println("Erreur !!:"+e);
@@ -79,5 +79,6 @@ public class Professeur {
 //        p1.ajoute_p(111, "gomri", "latifa", 4500);
         //p1.supp_p(123);
         p1.affiche_p();
+        
     }
 }

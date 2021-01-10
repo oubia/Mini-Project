@@ -22,9 +22,9 @@ public class Etudiant {
         }
     }
 
-    public void ajoute_e(String  nom_e,String prenom_e,int CNE,int payment,String nom_c){
+    public void ajoute_e(String  nom_e,String prenom_e,int CNE,String nom_c){
         try{
-            String query="INSERT INTO Etudiant (nom_e, prenom_e,CNE,payment,nom_c)VALUES ('"+nom_e+"','"+prenom_e+"',"+CNE+","+payment+",'"+nom_c+"')";
+            String query="INSERT INTO Etudiant (nom_e, prenom_e,CNE,nom_c)VALUES ('"+nom_e+"','"+prenom_e+"',"+CNE+",'"+nom_c+"')";
             stm.executeUpdate(query);
         }
         catch (SQLException e){
@@ -68,9 +68,9 @@ public class Etudiant {
             System.out.println("Erreur !!:"+e);
         }
     }
-     public void ajoute_abs(int CNE,int abs){
+     public void ajoute_abs(int CNE,int ab){
         try{
-            String query="UPDATE Etudiant SET abs=abs+"+abs+" WHERE CNE="+CNE+"";
+            String query="UPDATE Etudiant SET ABS=(ABS+"+ab+") WHERE CNE="+CNE+"";
             stm.executeUpdate(query);
         }catch (SQLException e){
             System.out.println("Erreur !!:"+e);
@@ -90,6 +90,7 @@ public class Etudiant {
 //        e1.ajoute_note(122, 17);
         //e1.ajoute_e("jabri", "amin", 122, 2500, "1BAC_1");
 //        e1.supp_e(122);
+        e1.ajoute_abs(111, 1);
         e1.affiche_e();
         e1.stm.close();
         e1.con.close();

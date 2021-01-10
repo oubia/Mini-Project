@@ -32,9 +32,9 @@ public class Classe {
             System.out.println("Erreur !!:"+e);
         }
     }
-       public void aff_etud_c(String nom_c){
+       public void aff_etud_c(String n_c){
         try{
-            String query="select nom_e,prenom_e from etudiant where upper(nom_c)=upper('"+nom_c+"');";
+            String query="select nom_e,prenom_e,nom_c from etudiant where UPPER(nom_c)=UPPER('"+n_c+"')";
             rst=stm.executeQuery(query);
             System.out.println("Voici la liste  des classes:");
             while(rst.next()){
@@ -61,8 +61,9 @@ public class Classe {
      public static void main(String[] args) throws SQLException{
             Classe c1=new Classe();
             //c1.ajoute_c("2BAC_3");
-            c1.aff_etud_c("1BAC_1");
+            c1.aff_etud_c("1bac_1");
            // c1.affiche_c();
+          
          
      }
 }
