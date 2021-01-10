@@ -28,11 +28,11 @@ public class Professeur {
         try{
             float x= (float) (Math.random()*10000);
             float y= (float) (Math.random()*10000);
-            int log_p=(int)x; int passwrd_p=(int)y;
-            String query1="INSERT INTO Professeur ( CNI,nom_p,prenom_p,salaire,log_p,passwrd_p) VALUES ("+CNI+",'"+nom_p+"','"+prenom_p+"',"+log_p+","+passwrd_p+")";
+            int log_pr=(int)x; int passwrd_pr=(int)y;
+            String query1="INSERT INTO Professeur ( CNI,nom_p,prenom_p,log_p,passwrd_p) VALUES ("+CNI+",'"+nom_p+"','"+prenom_p+"',"+log_pr+","+passwrd_pr+")";
             stm.executeUpdate(query1);
         }
-        catch (Exception e){
+        catch (SQLException e){
             System.out.println("Erreur !!"+e);
 
         }
@@ -76,7 +76,7 @@ public class Professeur {
     public static void main(String[] args) {
         Professeur p1=new Professeur();
 
-//        p1.ajoute_p(111, "gomri", "latifa", 4500);
+        p1.ajoute_p(141, "jadari", "khalid");
         //p1.supp_p(123);
         p1.affiche_p();
         

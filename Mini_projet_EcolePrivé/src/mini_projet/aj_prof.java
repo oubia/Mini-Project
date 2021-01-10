@@ -142,13 +142,12 @@ public class aj_prof extends javax.swing.JInternalFrame {
         int CNI=Integer.parseInt(cni.getText());
         String nom_p=n_pr.getText();
         String prenom_p=p_pr.getText();
-        
         Professeur p=new Professeur();
+        
         if(evt.getSource()==ok_aj_pr){
             p.ajoute_p(CNI, nom_p, prenom_p);
         }
         cni.setText(" ");
-        
         n_pr.setText(" ");
         p_pr.setText(" ");
        
