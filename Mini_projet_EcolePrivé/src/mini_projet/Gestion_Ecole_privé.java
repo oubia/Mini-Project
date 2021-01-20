@@ -48,6 +48,7 @@ public class Gestion_Ecole_privé extends javax.swing.JFrame {
         aj_prof = new javax.swing.JButton();
         sup_pr = new javax.swing.JButton();
         aj_sal = new javax.swing.JButton();
+        aff_prof = new javax.swing.JButton();
         menuBar = new javax.swing.JMenuBar();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -203,6 +204,13 @@ public class Gestion_Ecole_privé extends javax.swing.JFrame {
             }
         });
 
+        aff_prof.setText("aff_prof");
+        aff_prof.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                aff_profActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -215,6 +223,11 @@ public class Gestion_Ecole_privé extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
                 .addComponent(aj_sal, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
+            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel3Layout.createSequentialGroup()
+                    .addGap(127, 127, 127)
+                    .addComponent(aff_prof, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(128, Short.MAX_VALUE)))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -225,6 +238,11 @@ public class Gestion_Ecole_privé extends javax.swing.JFrame {
                     .addComponent(sup_pr)
                     .addComponent(aj_sal))
                 .addContainerGap(66, Short.MAX_VALUE))
+            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel3Layout.createSequentialGroup()
+                    .addGap(38, 38, 38)
+                    .addComponent(aff_prof)
+                    .addContainerGap(39, Short.MAX_VALUE)))
         );
 
         desktopPane.add(jPanel3);
@@ -352,6 +370,16 @@ public class Gestion_Ecole_privé extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_aj_salActionPerformed
 
+    private void aff_profActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aff_profActionPerformed
+     
+      if(evt.getSource()==aff_prof){
+            aff_prof af_p=new aff_prof();
+            desktopPane.add(af_p);
+            af_p.setVisible(true);
+         
+        }
+    }//GEN-LAST:event_aff_profActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -390,6 +418,7 @@ public class Gestion_Ecole_privé extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton aff_c;
     private javax.swing.JButton aff_e;
+    private javax.swing.JButton aff_prof;
     private javax.swing.JButton affiche_e_c;
     private javax.swing.JButton aj_classe;
     private javax.swing.JButton aj_pay;

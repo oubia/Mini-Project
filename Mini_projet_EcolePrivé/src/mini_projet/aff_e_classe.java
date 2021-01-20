@@ -5,18 +5,54 @@
  */
 package mini_projet;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
 /**
  *
  * @author hanane Jagour
  */
 public class aff_e_classe extends javax.swing.JInternalFrame {
-
+    Connection con;
+    Statement stm;
+    ResultSet rst;
+    int i=0;
     /**
      * Creates new form aff_e_classe
      */
     public aff_e_classe() {
         initComponents();
+        try{
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+            con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","hr","hr");
+            stm=con.createStatement();
+        }catch(ClassNotFoundException | SQLException e){
+            System.out.println("Erreur de chargement de pilote:"+e);
+        }
+        
     }
+     public final void affichage_e_classe(){
+         String nom_c=n_c.getText();
+          try{
+            String query="select nom_e,prenom_e,nom_c from etudiant where UPPER(nom_c)=UPPER('"+nom_c+"')";
+            rst=stm.executeQuery(query);
+            while(rst.next()){
+                String Nom=rst.getString("nom_e");
+                String Prénom=rst.getString("prenom_e");
+                tab_e_c.setValueAt(Nom, i, 0);
+                tab_e_c.setValueAt(Prénom, i, 1);
+              
+               i=i+1;
+           }
+            
+        }catch(SQLException e){
+            System.out.println("Erreur !!:"+e);
+        }
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -29,13 +65,16 @@ public class aff_e_classe extends javax.swing.JInternalFrame {
 
         jLabel3 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tab_e_c = new javax.swing.JTable();
+        jLabel2 = new javax.swing.JLabel();
+        n_c = new javax.swing.JTextField();
+        ok_af_e_c = new javax.swing.JButton();
 
         jLabel3.setBackground(new java.awt.Color(153, 153, 255));
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel3.setText("La liste des étudiants du classe");
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tab_e_c.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
                 {null, null},
@@ -64,7 +103,22 @@ public class aff_e_classe extends javax.swing.JInternalFrame {
                 "Nom", "Prénom"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tab_e_c);
+
+        jLabel2.setText("Nom de classe");
+
+        n_c.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                n_cActionPerformed(evt);
+            }
+        });
+
+        ok_af_e_c.setText("OK");
+        ok_af_e_c.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ok_af_e_cActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -78,25 +132,54 @@ public class aff_e_classe extends javax.swing.JInternalFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(134, 134, 134)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(69, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(44, 44, 44)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46)
+                .addComponent(n_c, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
+                .addComponent(ok_af_e_c)
+                .addGap(46, 46, 46))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(n_c, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ok_af_e_c))
+                .addGap(8, 8, 8)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void n_cActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n_cActionPerformed
+
+    }//GEN-LAST:event_n_cActionPerformed
+
+    private void ok_af_e_cActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ok_af_e_cActionPerformed
+
+        if(evt.getSource()==ok_af_e_c){
+            affichage_e_classe();
+        }
+        n_c.setText(" ");
+
+    }//GEN-LAST:event_ok_af_e_cActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTextField n_c;
+    private javax.swing.JButton ok_af_e_c;
+    private javax.swing.JTable tab_e_c;
     // End of variables declaration//GEN-END:variables
 }

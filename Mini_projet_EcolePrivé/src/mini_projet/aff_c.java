@@ -5,17 +5,50 @@
  */
 package mini_projet;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
 /**
  *
  * @author hanane Jagour
  */
 public class aff_c extends javax.swing.JInternalFrame {
-
+    Connection con;
+    Statement stm;
+    ResultSet rst;
+    int i=0;
     /**
      * Creates new form aff_c
      */
     public aff_c() {
         initComponents();
+        try{
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+            con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","hr","hr");
+            stm=con.createStatement();
+        }catch(ClassNotFoundException | SQLException e){
+            System.out.println("Erreur de chargement de pilote:"+e);
+        }
+        affichage_classe();
+    }
+    
+    public final void affichage_classe(){
+          try{
+            String query="select * from Classe ";
+            rst=stm.executeQuery(query);
+            while(rst.next()){
+                String classes=rst.getString("nom_c");
+                tab_c.setValueAt(classes, i, 0);
+              
+               i=i+1;
+           }
+            
+        }catch(SQLException e){
+            System.out.println("Erreur !!:"+e);
+        }
     }
 
     /**
@@ -29,15 +62,14 @@ public class aff_c extends javax.swing.JInternalFrame {
 
         jLabel3 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tab_c = new javax.swing.JTable();
 
         jLabel3.setBackground(new java.awt.Color(153, 153, 255));
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel3.setText("La liste des classes");
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tab_c.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null},
                 {null},
                 {null},
                 {null},
@@ -53,32 +85,32 @@ public class aff_c extends javax.swing.JInternalFrame {
                 {null}
             },
             new String [] {
-                "Les classes"
+                "classes"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tab_c);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(237, Short.MAX_VALUE)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(230, 230, 230))
             .addGroup(layout.createSequentialGroup()
-                .addGap(182, 182, 182)
+                .addGap(184, 184, 184)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(204, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(34, Short.MAX_VALUE))
         );
 
         pack();
@@ -88,6 +120,6 @@ public class aff_c extends javax.swing.JInternalFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable tab_c;
     // End of variables declaration//GEN-END:variables
 }

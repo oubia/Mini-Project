@@ -5,17 +5,64 @@
  */
 package mini_projet;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
 /**
  *
  * @author hanane Jagour
  */
 public class aff_etud extends javax.swing.JInternalFrame {
-
+    Connection con;
+    Statement stm;
+    ResultSet rst;
+    int i=0;
     /**
      * Creates new form aff_etud
      */
     public aff_etud() {
         initComponents();
+         try{
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+            con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","hr","hr");
+            stm=con.createStatement();
+        }catch(ClassNotFoundException | SQLException e){
+            System.out.println("Erreur de chargement de pilote:"+e);
+        }
+         affichage_etud();
+    }
+    
+    public final void affichage_etud(){
+        
+          try{
+            String query="select * from Etudiant ";
+            rst=stm.executeQuery(query);
+            while(rst.next()){
+                int CNE=rst.getInt("CNE");
+                String Nom=rst.getString("nom_e");
+                String Prénom=rst.getString("prenom_e");
+                String Classe=rst.getString("nom_c");
+                int Payment=rst.getInt("payment");
+                int Note=rst.getInt("note");
+                int Absence=rst.getInt("abs");
+                
+                tab_etud.setValueAt(CNE, i, 0);
+                tab_etud.setValueAt(Nom, i, 1);
+                tab_etud.setValueAt(Prénom, i, 2);
+                tab_etud.setValueAt(Classe, i, 3);
+                tab_etud.setValueAt(Payment, i, 4);
+                tab_etud.setValueAt(Note, i, 5);
+                tab_etud.setValueAt(Absence, i, 6);
+              
+               i=i+1;
+           }
+            
+        }catch(SQLException e){
+            System.out.println("Erreur !!:"+e);
+        }
     }
 
     /**
@@ -29,13 +76,13 @@ public class aff_etud extends javax.swing.JInternalFrame {
 
         jLabel3 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tab_etud = new javax.swing.JTable();
 
         jLabel3.setBackground(new java.awt.Color(153, 153, 255));
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel3.setText("La liste des étudiants");
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tab_etud.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null},
@@ -61,27 +108,27 @@ public class aff_etud extends javax.swing.JInternalFrame {
                 "CNE", "Nom", "Prénom", "Classe", "Payment", " Note", "Absence"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tab_etud);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 535, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(18, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(214, Short.MAX_VALUE)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(211, 211, 211))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 535, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31)
+                .addGap(35, 35, 35)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(49, Short.MAX_VALUE))
         );
@@ -93,6 +140,6 @@ public class aff_etud extends javax.swing.JInternalFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable tab_etud;
     // End of variables declaration//GEN-END:variables
 }

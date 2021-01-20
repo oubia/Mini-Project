@@ -76,7 +76,7 @@ public class Professeur {
     public static void main(String[] args) {
         Professeur p1=new Professeur();
 
-        p1.ajoute_p(141, "jadari", "khalid");
+//        p1.ajoute_p(141, "jadari", "khalid");
         //p1.supp_p(123);
         p1.affiche_p();
         
