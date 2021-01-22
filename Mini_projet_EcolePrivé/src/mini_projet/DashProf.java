@@ -101,6 +101,7 @@ public class DashProf extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -527,7 +528,7 @@ public class DashProf extends javax.swing.JFrame {
 
         jLabel31.setFont(new java.awt.Font("Yu Gothic Medium", 1, 12)); // NOI18N
         jLabel31.setForeground(new java.awt.Color(53, 33, 89));
-        jLabel31.setText("Absence (nombre de heures)");
+        jLabel31.setText("Absence (nombre des heures)");
 
         ok_abs.setBackground(new java.awt.Color(63, 42, 100));
         ok_abs.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
@@ -556,7 +557,7 @@ public class DashProf extends javax.swing.JFrame {
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(ok_abs)
                             .addComponent(ab, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(62, Short.MAX_VALUE))
+                .addContainerGap(55, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -664,6 +665,7 @@ public class DashProf extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void AccueilpnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AccueilpnMouseClicked
@@ -715,7 +717,7 @@ public class DashProf extends javax.swing.JFrame {
     }//GEN-LAST:event_LogoutpnMouseExited
 
     private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
-        int conf=JOptionPane.showConfirmDialog(null, "Are you sure to exit ?","Exit Message box",JOptionPane.YES_NO_OPTION);
+        int conf=JOptionPane.showConfirmDialog(null, "êtes-vous sûr de quitter  ?","Quitter Message box",JOptionPane.YES_NO_OPTION);
             if(conf==JOptionPane.YES_NO_OPTION){
                 dispose();
             }

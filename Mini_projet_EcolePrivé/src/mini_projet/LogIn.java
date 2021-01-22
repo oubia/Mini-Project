@@ -9,7 +9,7 @@ import java.awt.Color;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
-
+import java.awt.Dimension;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -41,6 +41,7 @@ public class LogIn extends javax.swing.JFrame {
         }catch(ClassNotFoundException | SQLException ee){
             System.out.println("Erreur de chargement de pilote:"+ee);
         }
+        
     }
 
     /**
@@ -68,7 +69,7 @@ public class LogIn extends javax.swing.JFrame {
         PassP = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
-        ok_log_p = new javax.swing.JButton();
+        ok_logP = new javax.swing.JButton();
         jPanel12 = new javax.swing.JPanel();
         jPanel21 = new javax.swing.JPanel();
         jPanel22 = new javax.swing.JPanel();
@@ -87,6 +88,7 @@ public class LogIn extends javax.swing.JFrame {
         ok_log_d = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -222,16 +224,16 @@ public class LogIn extends javax.swing.JFrame {
 
         jPanel2.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 40, 40));
 
-        ok_log_p.setBackground(new java.awt.Color(255, 255, 255));
-        ok_log_p.setFont(new java.awt.Font("Yu Gothic Medium", 1, 12)); // NOI18N
-        ok_log_p.setForeground(new java.awt.Color(53, 33, 89));
-        ok_log_p.setText("Log In");
-        ok_log_p.addActionListener(new java.awt.event.ActionListener() {
+        ok_logP.setBackground(new java.awt.Color(255, 255, 255));
+        ok_logP.setFont(new java.awt.Font("Yu Gothic Medium", 1, 12)); // NOI18N
+        ok_logP.setForeground(new java.awt.Color(53, 33, 89));
+        ok_logP.setText("Log In");
+        ok_logP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ok_log_pActionPerformed(evt);
+                ok_logPActionPerformed(evt);
             }
         });
-        jPanel2.add(ok_log_p, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 270, 90, 40));
+        jPanel2.add(ok_logP, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 270, 90, 40));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 350, 360));
 
@@ -426,6 +428,7 @@ public class LogIn extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void Log_PActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Log_PActionPerformed
@@ -447,29 +450,40 @@ public class LogIn extends javax.swing.JFrame {
     private void ok_log_dActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ok_log_dActionPerformed
         int logd= Integer.parseInt(LogD.getText());
         int passd = Integer.parseInt(PassD.getText());
-        
+//        if(d.log_d==logd && d.passwrd_d==passd)
        
         if(evt.getSource()==ok_log_d){
-            if(d.log_d==logd && d.passwrd_d==passd){
-                new DashBoard().setVisible(true);
-                dispose();
-            }else{
-                int confir=JOptionPane.showConfirmDialog(null,"Votre login ou mode pass est Incorrect","Quiter le box",JOptionPane.DEFAULT_OPTION);
-                if(confir==JOptionPane.OK_OPTION){
-                    LogD.setText("");
-                    PassD.setText("");
-                
+            try{
+                String query="select * from Directeur";
+                rst=stm.executeQuery(query);
+                while(rst.next()){
+                    int lo=rst.getInt("LOG_D");
+                    int pa=rst.getInt("PASSWRD_D");
+                    if(lo==logd && pa==passd){
+                        new DashBoard().setVisible(true);
+                        dispose();
+                }else{
+                    int confir=JOptionPane.showConfirmDialog(null,"votre login ou mot de passe est incorrect","Login erreur",JOptionPane.DEFAULT_OPTION);
+                    if(confir==JOptionPane.OK_OPTION){
+                        LogD.setText("");
+                        PassD.setText("");
+
+                    }
+                }
+            }
+            }catch(SQLException e){
+                System.out.println("Erreur !!:"+e);
             }
         }
     }//GEN-LAST:event_ok_log_dActionPerformed
 
-    private void ok_log_pActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ok_log_pActionPerformed
+    private void ok_logPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ok_logPActionPerformed
         int logp=Integer.parseInt(Log_P.getText());
         int passp=Integer.parseInt(PassP.getText());
         
-        if(evt.getSource()==ok_log_p){
+        if(evt.getSource()==ok_logP){
             try{
-                String query="select LOG_P,PASSWRD_P from Professeur";
+                String query="select * from Professeur";
                 rst=stm.executeQuery(query);
                 while(rst.next()){
                     int lo=rst.getInt("LOG_P");
@@ -477,26 +491,28 @@ public class LogIn extends javax.swing.JFrame {
                     if(lo==logp && pa==passp){
                         new DashProf().setVisible(true);
                         dispose();
-
-                    }else{
-                        int confir=JOptionPane.showConfirmDialog(null,"Votre login ou mode pass est Incorrect","Quiter le box",JOptionPane.DEFAULT_OPTION);
-                        if(confir==JOptionPane.OK_OPTION){
+                        break;
+                    }else {
+                        
+                        int confir=JOptionPane.showConfirmDialog(null,"votre login ou mot de passe est incorrect","Login erreur",JOptionPane.DEFAULT_OPTION);
+                        if(confir==JOptionPane.OK_OPTION ){
+                             Log_P.setText("");
+                             PassP.setText("");
+                        }   
+//                        break;
+    
+                            
                         }
-                            break;
-                        }
-                        i=i+1;
+//                        i=i+1;
                     }
-                    Log_P.setText("");
-                    PassP.setText("");
+                
+                   
                 }catch(SQLException e){
                 System.out.println("Erreur !!:"+e);
             }
-            
-
-
-
-
-    }//GEN-LAST:event_ok_log_pActionPerformed
+ 
+        }
+    }//GEN-LAST:event_ok_logPActionPerformed
 
     /**
      * @param args the command line arguments
@@ -568,7 +584,7 @@ public class LogIn extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator12;
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator9;
+    private javax.swing.JButton ok_logP;
     private javax.swing.JButton ok_log_d;
-    private javax.swing.JButton ok_log_p;
     // End of variables declaration//GEN-END:variables
 }
