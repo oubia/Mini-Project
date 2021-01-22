@@ -578,7 +578,7 @@ public class DashBoard extends javax.swing.JFrame {
 
         jLabel24.setFont(new java.awt.Font("Yu Gothic Medium", 1, 12)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(53, 33, 89));
-        jLabel24.setText("Nom d'etudiant");
+        jLabel24.setText("Nom ");
 
         p_e.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
         p_e.setForeground(new java.awt.Color(53, 33, 89));
@@ -591,7 +591,7 @@ public class DashBoard extends javax.swing.JFrame {
 
         jLabel25.setFont(new java.awt.Font("Yu Gothic Medium", 1, 12)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(53, 33, 89));
-        jLabel25.setText("Prenom d'etudiant");
+        jLabel25.setText("Prénom ");
 
         jLabel33.setFont(new java.awt.Font("Yu Gothic Medium", 1, 12)); // NOI18N
         jLabel33.setForeground(new java.awt.Color(53, 33, 89));
@@ -611,7 +611,7 @@ public class DashBoard extends javax.swing.JFrame {
         jPanel31Layout.setHorizontalGroup(
             jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel31Layout.createSequentialGroup()
-                .addGap(0, 52, Short.MAX_VALUE)
+                .addGap(0, 124, Short.MAX_VALUE)
                 .addGroup(jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel31Layout.createSequentialGroup()
                         .addComponent(jLabel23)
@@ -621,14 +621,13 @@ public class DashBoard extends javax.swing.JFrame {
                         .addComponent(jLabel24)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(n_e, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel31Layout.createSequentialGroup()
-                        .addComponent(jLabel25)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(p_e, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel31Layout.createSequentialGroup()
-                        .addComponent(jLabel33)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel33)
+                            .addComponent(jLabel25))
+                        .addGap(4, 4, Short.MAX_VALUE)
+                        .addGroup(jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(p_e, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(ok_aj, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(c_e, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(196, 196, 196))
@@ -653,7 +652,7 @@ public class DashBoard extends javax.swing.JFrame {
                     .addComponent(c_e, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(ok_aj, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(168, Short.MAX_VALUE))
+                .addContainerGap(163, Short.MAX_VALUE))
         );
 
         jTEtud.addTab("Ajouter", jPanel31);
@@ -716,7 +715,7 @@ public class DashBoard extends javax.swing.JFrame {
             jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel32Layout.createSequentialGroup()
                 .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 34, Short.MAX_VALUE))
+                .addGap(0, 29, Short.MAX_VALUE))
         );
 
         jTEtud.addTab("Affiche", jPanel32);
@@ -788,7 +787,7 @@ public class DashBoard extends javax.swing.JFrame {
                     .addComponent(pym, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(ok_paym, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(216, Short.MAX_VALUE))
+                .addContainerGap(211, Short.MAX_VALUE))
         );
 
         jTEtud.addTab("Pyment", jPanel33);
@@ -839,7 +838,7 @@ public class DashBoard extends javax.swing.JFrame {
                     .addComponent(sup_e, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel32)
                     .addComponent(ok_sup, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(297, Short.MAX_VALUE))
+                .addContainerGap(292, Short.MAX_VALUE))
         );
 
         jTEtud.addTab("Supprimer", jPanel10);
@@ -1063,7 +1062,7 @@ public class DashBoard extends javax.swing.JFrame {
 
         jLabel18.setFont(new java.awt.Font("Yu Gothic Medium", 1, 12)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(53, 33, 89));
-        jLabel18.setText("Nom de Professeur");
+        jLabel18.setText("Nom");
 
         p_pr.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
         p_pr.setForeground(new java.awt.Color(53, 33, 89));
@@ -1076,29 +1075,29 @@ public class DashBoard extends javax.swing.JFrame {
 
         jLabel19.setFont(new java.awt.Font("Yu Gothic Medium", 1, 12)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(53, 33, 89));
-        jLabel19.setText("Prenom de Professeur");
+        jLabel19.setText("Prénom ");
 
         javax.swing.GroupLayout jPanel27Layout = new javax.swing.GroupLayout(jPanel27);
         jPanel27.setLayout(jPanel27Layout);
         jPanel27Layout.setHorizontalGroup(
             jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel27Layout.createSequentialGroup()
-                .addGap(0, 65, Short.MAX_VALUE)
+                .addGap(0, 155, Short.MAX_VALUE)
                 .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel27Layout.createSequentialGroup()
-                        .addComponent(jLabel17)
-                        .addGap(129, 129, 129)
-                        .addComponent(cni))
-                    .addGroup(jPanel27Layout.createSequentialGroup()
-                        .addComponent(jLabel18)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(n_pr, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel27Layout.createSequentialGroup()
                         .addComponent(jLabel19)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(Ajoute_C5, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(p_pr, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(p_pr, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel27Layout.createSequentialGroup()
+                        .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel18)
+                            .addComponent(jLabel17))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(cni)
+                            .addComponent(n_pr, javax.swing.GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE))))
                 .addGap(169, 169, 169))
         );
         jPanel27Layout.setVerticalGroup(
@@ -1117,7 +1116,7 @@ public class DashBoard extends javax.swing.JFrame {
                     .addComponent(p_pr, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(Ajoute_C5, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(208, Short.MAX_VALUE))
+                .addContainerGap(203, Short.MAX_VALUE))
         );
 
         jTProf.addTab("Ajouter", jPanel27);
@@ -1171,7 +1170,7 @@ public class DashBoard extends javax.swing.JFrame {
             .addGroup(jPanel28Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(80, Short.MAX_VALUE))
+                .addContainerGap(75, Short.MAX_VALUE))
         );
 
         jTProf.addTab("Affiche", jPanel28);
@@ -1243,7 +1242,7 @@ public class DashBoard extends javax.swing.JFrame {
                     .addComponent(pymprof, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(Pay_prof, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(224, Short.MAX_VALUE))
+                .addContainerGap(219, Short.MAX_VALUE))
         );
 
         jTProf.addTab("Pyment", jPanel29);
@@ -1294,7 +1293,7 @@ public class DashBoard extends javax.swing.JFrame {
                     .addComponent(cnisupro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel22)
                     .addComponent(Supp_p, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(305, Short.MAX_VALUE))
+                .addContainerGap(300, Short.MAX_VALUE))
         );
 
         jTProf.addTab("Supprimer", jPanel30);
@@ -1576,7 +1575,7 @@ public class DashBoard extends javax.swing.JFrame {
         jPanel12Layout.setHorizontalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel12Layout.createSequentialGroup()
-                .addComponent(jtabdash, javax.swing.GroupLayout.PREFERRED_SIZE, 564, Short.MAX_VALUE)
+                .addComponent(jtabdash, javax.swing.GroupLayout.DEFAULT_SIZE, 564, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel12Layout.setVerticalGroup(
