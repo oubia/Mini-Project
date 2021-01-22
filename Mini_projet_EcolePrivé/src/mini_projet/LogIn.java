@@ -480,38 +480,40 @@ public class LogIn extends javax.swing.JFrame {
     private void ok_logPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ok_logPActionPerformed
         int logp=Integer.parseInt(Log_P.getText());
         int passp=Integer.parseInt(PassP.getText());
-        
+        int[] n=new int[2];
         if(evt.getSource()==ok_logP){
             try{
                 String query="select * from Professeur";
                 rst=stm.executeQuery(query);
+                int lo;int pa;
                 while(rst.next()){
-                    int lo=rst.getInt("LOG_P");
-                    int pa=rst.getInt("PASSWRD_P");
+                    lo=rst.getInt("LOG_P");
+                    pa=rst.getInt("PASSWRD_P");
+                    n[0]=lo;
+                    n[1]=pa;
                     if(lo==logp && pa==passp){
                         new DashProf().setVisible(true);
                         dispose();
                         break;
-                    }else {
-                        
-                        int confir=JOptionPane.showConfirmDialog(null,"votre login ou mot de passe est incorrect","Login erreur",JOptionPane.DEFAULT_OPTION);
-                        if(confir==JOptionPane.OK_OPTION ){
-                             Log_P.setText("");
-                             PassP.setText("");
-                        }   
-//                        break;
+                    }}
+                if(n[0]!=logp && n[1]!=passp){
+
+                   int confir=JOptionPane.showConfirmDialog(null,"votre login ou mot de passe est incorrect","Login erreur",JOptionPane.DEFAULT_OPTION);
+                   if(confir==JOptionPane.OK_OPTION ){
+                        Log_P.setText("");
+                        PassP.setText("");
+                   }   
     
                             
                         }
-//                        i=i+1;
-                    }
+                    
                 
                    
                 }catch(SQLException e){
                 System.out.println("Erreur !!:"+e);
-            }
+            
  
-        }
+                }            }
     }//GEN-LAST:event_ok_logPActionPerformed
 
     /**
