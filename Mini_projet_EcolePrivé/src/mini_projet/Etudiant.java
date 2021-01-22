@@ -15,7 +15,7 @@ public class Etudiant {
     public Etudiant(){
         try{
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","hr","hr");
+            con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl ","hr","hr");
             stm=con.createStatement();
         }catch(ClassNotFoundException | SQLException e){
             System.out.println("Erreur de chargement de pilote:"+e);
@@ -70,7 +70,7 @@ public class Etudiant {
     }
      public void ajoute_abs(int CNE,int ab){
         try{
-            String query="UPDATE Etudiant SET ABS=(ABS+"+ab+") WHERE CNE="+CNE+"";
+            String query="UPDATE Etudiant SET ABS=(abs+"+ab+") WHERE CNE="+CNE+"";
             stm.executeUpdate(query);
         }catch (SQLException e){
             System.out.println("Erreur !!:"+e);

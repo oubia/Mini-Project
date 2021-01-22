@@ -7,6 +7,6 @@ public class Directeur {
     Statement stm;
     ResultSet rst;
     public  String nom_d; 
-    private double log_d=1111;
-    private double passwrd_d=1111;
+    public int log_d=1111;
+    public int passwrd_d=1111;
 }
